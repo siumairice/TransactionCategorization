@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TransactionClassifierView()
+    }
+}
+
+@main
+struct TransactionsApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView() // Use the SwiftUI test screen
         }
-        .padding()
     }
 }
 
